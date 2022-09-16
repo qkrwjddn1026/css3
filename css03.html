@@ -10,14 +10,31 @@
      .menu a {display: block; height: 50px; line-height: 50px;}   
     /* 부모 > 자식 : 부모 자식 선택자 - 부모의 바로 있는 자식 요소를 선택*/
     .menu > a { width: 100px; color:#2c8;}
+    /* 순서 위치 선택자 */
     .list {list-style: none;}
     .list li { float:left; width:120px; height: 50px; background-color: aquamarine;}
+
+    /* 첫번째 요소 */
     .list li:first-child {border-radius: 20px 0px 0px 20px; } /* 메뉴 1*/
+    /* .list li:first-of-type */
+
+    /* 마지막 요소*/
     .list li:last-child{border-radius: 0px 20px 20px 0px;}
+    /* .list li:last-of-type */
+
+    /* 특정 번째 요소*/
+    /*홀수 번째 요소*/
     .list li:nth-child(2n+1) {background-color: orange;}
+    /* nth-child(위치), nth-of-type(위치)*/
     .list li:nth-child(3) {background-color: deeppink;}
+
+    /* 형제 선택자 */
+    /* 형 ~ 아우 : 해당 형의 다음에 위치한 아우요소들을 선택 */
     .list ~ a {clear: both; background-color: gold;}
+    /* 형 + 아우 : 해당 형의 바로 다음에 나오는 아우요소 하나를 선택 */
     .list + a {background-color: navy; color: white;} /* 상단 1*/
+    /* 복수 선택자 : 한 번에 여러 조건에 해당하는 요소를 선택 */
+    .list + a, .list ~ span {text-decoration: line-through;}
     </style>
 </head>
 <body>
@@ -36,6 +53,8 @@
         <a href="">상단2</a>
         <a href="">상단3</a>
         <a href="">상단4</a>
+       <span>내용1</span>
+       <span>내용2</span> 
     </nav>
 </body>
 </html>
