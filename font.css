@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "ntg";
+    src:local("※"),
+    url("./noto/noto-sans-kr.eot?#iefix") format('embedded-opentype'),
+    url("./noto/noto-sans-kr.woff2") format('wff2'),
+    url("./noto/noto-sans-kr.woff") format('wff'),
+    url("./noto/noto-sans-kr.otf") format('opentype'),
+    url("./noto/noto-sans-kr.ttf") format('truetype'),
+    url("./noto/noto-sans-kr.svg") format('svg');
+    }

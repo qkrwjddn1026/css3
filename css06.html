@@ -44,8 +44,21 @@
     */
 
 
-   #txt4{word-break: break-all; font-family:  'Noto Sans KR', sans-serif;}
-   </style>
+   #txt4{word-break: break-all; font-family:  'Noto Sans KR', sans-serif; font-family: 'Nanum Gothic', sans-serif;}
+   /* 줄임말 처리 : width-폭, text-overflow(글자숨김(.....)), white-space(한줄로 표시), overflow(지정한 크기보다 내용이 많을 때 숨기기/표시/스크롤바) */
+   #txt5{width: 500px; overflow: hidden ; white-space: nowrap; text-overflow: ellipsis;}
+
+   #txt6{width: 500px; overflow: hidden; white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+   #txt7{width: 500px; overflow: hidden; white-space: normal; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+</style>
+<link rel="stylesheet" href="font.css">
+<style>
+
+#txt8{font-size: 80px;font-family: "ntg", sans-serif;}
+#txt9{font-size: 80px; font-family: 'Nanum Gothic',sans-serif;}
+#txt10{text-shadow: 4px 2px 5px red;}
+/* https://googlefonts.github.io/korean/ */
+</style>
 </head>
 <body>
     <div class="wrap">
@@ -54,9 +67,12 @@
         <p class="txt" id="txt3">문단 및 글자 모양3 문단 및 글자 모양3 문단 및 글자 모양3 문단 및 글자 모양3 문단 및 글자 모양3 문단 및 글자 모양3 문단 및 글자 모양3 문단 및 글자 모양3 문단 및 글자 모양3 문단 및 글자 모양3 문단 및 글자 모양3 </p>
         <p class="txt" id="txt4">문단 및 글자 모양4 font style text style paragraph style font style text style paragraph style font style text style paragraph style font style 
             text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style</p>
-        <p class="txt" id="txt5">문단 및 글자 모양5</p>
-        <p class="txt" id="txt6">문단 및 글자 모양6</p>
-        <p class="txt" id="txt7">문단 및 글자 모양7</p>
+        <p class="txt" id="txt5">문단 및 글자 모양5 font style text style paragraph style font style text style paragraph style font style text style paragraph style font style 
+            text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style</p>
+        <p class="txt" id="txt6">문단 및 글자 모양6 font style text style paragraph style font style text style paragraph style font style text style paragraph style font style 
+            text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style</p>
+        <p class="txt" id="txt7">문단 및 글자 모양7font style text style paragraph style font style text style paragraph style font style text style paragraph style font style 
+            text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style</p>
         <p class="txt" id="txt8">문단 및 글자 모양8</p>
         <p class="txt" id="txt9">문단 및 글자 모양9</p>
         <p class="txt" id="txt10">문단 및 글자 모양10</p>
